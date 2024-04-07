@@ -1,35 +1,38 @@
 body {
     font-family: Arial, Helvetica, sans-serif
  }
+
+ .header{
+   background: linear-gradient(to top, #FF9E29, #FFD466);
+   margin: 0;
+   margin: 0;
+   display: grid;
+   grid-template-columns: auto auto; 
+   align-items: center;
+ }
  
  @media screen and (min-resolution: 200dpi),
          screen and (min-resolution: 1.25dppx) {
- 
-       #introimage{
-          padding: 120px;
-       }
- 
-       #product1image, #product2image, #product3image, #product4image, #product5image, #product6image{
-          padding: 80px;
-       }
 
-       #product1text, #product2text, #product3text,#product4text, #product5text, #product6text{
-        padding: 24px;
-        background-color: rgb(72, 71, 68);
-         
-       }
+            #menu{
+               text-align: left;
+            }
+
+            #menu img{
+               width:40px;
+               
+            }
+
+            #logo{
+               justify-self: center;
+            }
+               
+            #logo img {
+               width:130px;
+                
+            }
  
-       #brandingimage1, #brandingimage2, #brandinginfo1, #brandinginfo2{
-          padding: 80px;
-       }
- 
-       #image{
-          display: none;
-       }
- 
-       #footer{
-          padding: 70px;
-       }
+       
  
  
  }
