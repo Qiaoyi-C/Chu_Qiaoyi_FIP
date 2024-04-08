@@ -9,22 +9,36 @@
 </head>
 <body>
     <header id="header-zima"  class="grid-con">
-        <div class="box col-start-1 col-end-5">
-            <div id="menu" class="col-start-1 col-end-2 ">
+        <div class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">
+            <div id="menu" class="col-start-1 col-end-2 "  onclick="toggleMenu()">
                 <img src="images/menu.svg" alt="hamburger menu icon">
             </div>
             <div id="logo" class="col-start-1 col-end-5">
                 <img src="images/logo-white.png" alt="ZIMA logo">
             </div>
         </div>
+        <nav id="sidebar-menu" class="l-col-start-7 l-col-end-13">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dining.html">Product</a></li>
+                <li><a href="spa.html">Contact</a></li>
+
+            </ul>
+        </nav>
       </header>
 
       <section id="zima-main" class="grid-con">
         <h1 class="hidden">Welcome to ZIMA</h1>
         <div id="introimage" class="col-span-full m-col-span-full l-col-span-full ">
-            <img src="images/Main.jpg" alt="Main Photo">
+            <p class="intro-name">ZIMA</p>
+            <p class="intro-info">IS YOUR</p>
+            <p class="intro-info"> BEST FRIEND </p>
+            <button>Where to buy</button>
         </div>
+      </section>
 
+
+<section class="grid-con" id="flavors">
         <div id="titleproduct" class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">ZIMA FLAVORS</div>
 
         <div class="card col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-5">
@@ -54,55 +68,63 @@
                 <button class="col-start-4 col-end-5">MORE</button>
             </div>
         </div>
-        
-    <div class="story col-span-full">
-        <div id="titlebranding" class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">ZIMA STORY</div>
-        <div class="cheers">
+    </section>
+    
+    <section class="grid-con" id="story">  
+        <div class="story col-span-full m-col-span-full l-col-span-full">
+            <div id="titlebranding" class="box ">ZIMA STORY</div>
+        </div>
+        <div class="cheers story col-span-full m-col-start-1 m-col-end-7">
             <img src="images/story_cheers.jpg" alt="People Cheers">
         </div>
-        <div class="storytext">
+        <div class="storytext col-span-full m-col-start-7 m-col-end-13 ">
             <p>ZIMA originated in Japan and was later introduced to the U.S. market in the early 1990s.</p>
             <p>In 1994, 1.2 million barrels of the beverage were sold. It was originally popular among young women.</p>
             <p> However, despite Zima’s early success, sales began to decline in subsequent years. </p>
+            <div class="storybt ">
+                <button>SEE MORE</button>
+            </div>
         </div>
-        <div class="storybt">
-            <button>SEE MORE</button>
+    </section>
+       
+    <section class="grid-con" id="where">
+        <div class="find col-span-full m-col-span-full l-col-span-full">
+            <div id="find" class="box ">Where to Find ZIMA</div>
         </div>
 
-    </div>
-       
-    <div class="find col-span-full">
-        <div id="find" class="box col-start-1 col-end-5 m-col-span-full l-col-span-full">Where to Find ZIMA</div>
-        <div class="lcbo m-col-span-full l-col-span-full">
-            <img src="images/lcbo.jpg" alt="People Cheers">
+        <div class="lcbo find col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+            <img src="images/lcbo.jpg" alt="LCBO logo">
         </div>
-        <div class="findtext">
+        <div class="findtext col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
             <p>We are available for sale at every LCBO.</p>
             <p>Please go to the nearest LCBO to your home to find us.</p>
             <p> If you have any questions, feel free to contact us. </p>
+            <div class="findbt">
+                <button>CONTACT US</button>
+            </div>
         </div>
-        <div class="findbt">
-            <button>CONTACT US</button>
-        </div>
-
-    </div>
-        
-      </section>
+           
        
-      <footer id="footer-zima" class="grid-con">
-        <section id="footer-contact-info" class="box col-span-full">
-            <h3>ZIMA</h3>
-            <p>Phone: +1 226 523987
-                <br>
-                E-mail: service@zima.com
-                <br>
-                Address: 1460 Oxford , London, ON
-            </p>
-        
+    </section>
+    
+       
+    <footer id="footer-zima" class="grid-con">
+        <section id="footer-contact-info" class="box col-span-full l-col-span-full">
+            <div class="footer-logo col-start-1 col-end-2">
+                <img src="images/logo-white.png" alt="zima logo">
+            </div>
+            <div class="footer-contact col-start-2 col-end-5">
+                <p>
+                    Phone: +1 226 523987<br>
+                    E-mail: service@zima.com<br>
+                    Address: 1460 Oxford , London, ON
+                </p>
+            </div>
         </section>
-
-      </footer>
-
+    </footer>
+    
+    
+    
 
         <script src="js/main.js"></script>   
 </body>
