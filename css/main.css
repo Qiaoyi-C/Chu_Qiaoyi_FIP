@@ -9,6 +9,7 @@ body {
    display: grid;
    grid-template-columns: auto auto; 
    align-items: center;
+   width: 100%;
  }
 
  button{
@@ -43,8 +44,67 @@ body {
                 
             }
 
-            #introimage img{
-               height: 100%;
+            #sidebar-menu {
+               position: fixed;
+               top: 0;
+               left: -250px; 
+               width: 250px;
+               height: 100vh;
+               background-color: #FFF5E8;
+               transition: left 0.3s ease; 
+           }
+           
+           #sidebar-menu.active {
+               left: 0; 
+           }
+
+           #sidebar-menu li{
+               list-style: none;
+               padding: 24px;
+               
+           }
+
+             #sidebar-menu li a{
+                text-decoration: none;
+                color: #FF9E29;
+                font-weight: bold;
+                padding: 16px 64px 16px 64px;
+                
+
+               }
+
+               #sidebar-menu li a:hover{
+                  background-color: #FF9E29;
+                  color: white;
+               }
+
+            #zima-main{
+               background:url(../images/Main.jpg) no-repeat;
+               display: flex;
+               width: 100%;
+               height: 320px;
+               align-items: center; 
+               padding: 24px;
+               
+            }
+
+            .intro-name {
+               color: white;
+               font-size: 74px;
+               font-weight: bold;
+               margin-top: 20px;
+               margin-bottom: 8px;
+            }
+
+            .intro-info {
+               color: white;
+               font-size: 48px;
+               font-weight: bold;
+               margin-bottom: 16px;
+            }
+
+            #introimage button{
+               margin-bottom: 16px;
             }
 
             #titleproduct{
@@ -105,7 +165,7 @@ body {
                font-weight: bold;
             }
 
-            .story{
+            #story{
                background-color:#FFF5E8;
             }
 
@@ -151,9 +211,18 @@ body {
             #footer-zima{
                background-color: #FF9E29;
             }
- 
-       
- 
+
+            .footer-logo{
+               width: 25%;
+            }
+
+            .footer-contact{
+               text-align: right;
+               font-size: 14px;
+               color: white;
+               line-height: 20px;
+
+            }
  
  }
  
@@ -162,26 +231,56 @@ body {
     .box{
        font-size: 18px;
     }
+
+    #menu {
+      display: none;
+  }
+
+  #header-zima {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#header-zima #sidebar-menu {
+   order: 2; /* 将菜单移动到右边 */
+}
+    #zima-main{
+
+      height: 400px;
+   }
+
+   #titleproduct, #titlebranding, #find{
+      font-size: 36px; 
+   }
+
+   .story img, .find img{
+      width: 100%;
+      height: 90%;
+   }
  
-    #logo, #menu{
-       padding: 30px;
-    }
- 
-    #heroimage{
-       padding: 160px;
-    }
- 
-    #product1 , #product2{
-       padding: 80px;
-    }
- 
-    #service1, #service2, #service3, #service4, #service5, #service6{
-       padding: 100px;
-    }
- 
-    #image{
-       display: none;
-    }
+
+
+   .storybt , .findbt{
+      display: flex;
+      justify-content: left;
+      
+   }
+
+   .storytext{
+      font-size: 16px;
+   }
+
+    .lcbo {
+      order: 2;
+      
+  }
+
+  .findtext {
+      order: 1; 
+      font-size: 16px;
+
+  }
     
     #footer{
        padding: 90px;
@@ -191,28 +290,62 @@ body {
  }
  
  @media screen and (min-width: 1200px) { 
+
+
+   #header-zima{
+      max-width: 100%;
+   }
+
+   #zima-main{
+
+      height: 450px;
+   }
+
+   #introimage{
+      padding: 24px;
+   }
+
+   #introimage button{
+      font-size: 18px;
+   }
+
+   #titleproduct, #titlebranding, #find{
+      font-size: 46px; 
+   }
+
+   #flavors{
+      padding-bottom: 48px;
+   }
+
+   .storybt , .findbt{
+      display: flex;
+      justify-content: left;
+      
+   }
+
+   .storybt button, .findbt button{
+      font-size: 18px;
+   }
+
+   #story{
+      padding-bottom: 24px;
+   }
  
-    .box{
-       font-size: 16px;
-    }
+    .lcbo {
+      order: 2;
+      
+  }
+
+  .findtext {
+      order: 1; 
+  }
+
+  #where{
+   margin-bottom: 24px;
+  }
  
-    #logo, #menu{
-       padding: 36px;
-    }
- 
-    #heroimage{
-       padding: 180px;
-    }
- 
-    #product1 , #product2{
-       padding: 90px;
-    }
- 
-    #image{
-       display: inline;
-       padding: 100px;
-    }
- 
- 
+ #footer-zima{
+   max-width: 100%;
+ }
  
  }
