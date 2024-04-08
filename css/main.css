@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif
  }
 
- .header{
+ #header-zima{
    background: linear-gradient(to top, #FF9E29, #FFD466);
    margin: 0;
    margin: 0;
@@ -10,9 +10,20 @@ body {
    grid-template-columns: auto auto; 
    align-items: center;
  }
+
+ button{
+   background-color: #FF9E29;
+   color: white;
+   border: none;
+   padding: 10px 25px;
+   border-radius: 50px;
+   font-weight: bold;
+   cursor: pointer;
+ }
  
  @media screen and (min-resolution: 200dpi),
          screen and (min-resolution: 1.25dppx) {
+
 
             #menu{
                text-align: left;
@@ -30,6 +41,115 @@ body {
             #logo img {
                width:130px;
                 
+            }
+
+            #introimage img{
+               height: 100%;
+            }
+
+            #titleproduct{
+               font-size: 24px;
+               color: #FF9E29;
+               background-color: white;
+               font-weight: bold;
+            }
+
+            .card{
+               background-color: white;
+               border-radius: 20px;
+               border: solid 1px #E6E6E6;
+               margin-bottom: 16px;
+         
+            }
+
+            #product1image img{
+               border-radius: 20px 20px 0 0;
+            }
+
+            #product1text{
+               display: grid;
+               grid-template-columns: auto auto; 
+               align-items: center;  
+               margin: 24px 16px 24px 16px;
+            }
+
+            button:hover{
+               background-color: #FFD466;
+            }
+
+            #product2image img{
+               border-radius: 20px 20px 0 0;
+            }
+
+            #product2text{
+               display: grid;
+               grid-template-columns: auto auto; 
+               align-items: center;  
+               margin: 24px 16px 24px 16px;
+            }
+
+            #product3image img{
+               border-radius: 20px 20px 0 0;
+            }
+
+            #product3text{
+               display: grid;
+               grid-template-columns: auto auto; 
+               align-items: center;  
+               margin: 24px 16px 24px 16px;
+            }
+
+            #titlebranding{
+               font-size: 24px;
+               color: #FF9E29;
+               font-weight: bold;
+            }
+
+            .story{
+               background-color:#FFF5E8;
+            }
+
+            .story img{
+               border-radius: 20px;
+            }
+
+            .cheers{
+               margin: 16px;
+            }
+
+            .storytext, .findtext{
+               margin: 16px;
+               line-height: 28px;
+               font-size: 14px;
+            }
+            .storybt{
+               text-align: center;
+               margin-top: 24px;
+               margin-bottom: 32px;
+            }
+
+            #find{
+               font-size: 24px;
+               color: #FF9E29;
+               font-weight: bold;
+            }
+
+            .find img{
+               border-radius: 20px;
+            }
+
+            .lcbo{
+               margin: 16px;
+            }
+
+            .findbt{
+               text-align: center;
+               margin-top: 48px;
+               margin-bottom: 88px;
+            }
+
+            #footer-zima{
+               background-color: #FF9E29;
             }
  
        
