@@ -15,6 +15,7 @@ body {
  button{
    background-color: #FF9E29;
    color: white;
+   font-size: 16px;
    border: none;
    padding: 10px 25px;
    border-radius: 50px;
@@ -223,6 +224,56 @@ body {
                line-height: 20px;
 
             }
+
+            /* Product Page */
+
+            #product-main{
+               background-color: #FFF5E8;
+               padding: 20px;
+            }
+
+            h2{
+               color: #FF9E29;
+            }
+
+            #product-orange, #product-blueberry{
+               margin-top: 48px;
+            }
+
+            #product-orange img, #product-peach img, #product-blueberry img{
+               border-radius: 20px;
+            }
+
+            .orange-title{
+               font-size: 24px;
+               font-weight: bold;
+               color: #FF9E29;
+               margin-top: 32px;         
+               text-align: center;
+            }
+
+            .orange-info{
+               text-align: left;
+               line-height: 30px;
+               font-size: 16px;
+            }
+
+            .flavorbt {
+               text-align: center;
+               margin-top: 32px;
+               margin-bottom: 48px;
+            }
+
+            #product-peach{
+               background-color: #FFF5E8;
+               padding-top: 48px;
+
+            }
+            
+
+     
+
+           
  
  }
  
@@ -242,7 +293,9 @@ body {
    align-items: center;
 }
 
-   #header-zima #sidebar-menu {
+
+#header-zima #sidebar-menu {
+
    order: 2; 
 }
     #zima-main{
@@ -293,6 +346,26 @@ body {
     #footer{
        padding: 90px;
     }
+
+    /* Product Page */
+
+    #product-orange, #product-blueberry{
+      padding-bottom: 64px;
+      padding-top: 32px;
+    }
+
+    #product-peach{
+      padding-bottom: 64px;
+      padding-top: 64px;
+    }
+
+    .flavor-img{
+      order: 2;
+    }
+
+    .flavor-info{
+      order: 1;
+   }
   
  
  }
@@ -355,5 +428,14 @@ body {
  #footer-zima{
    max-width: 100%;
  }
+
+
+ /* Product Page */
+ #product-main{
+   max-width: 100%;
+ }
+
+
+
  
  }
