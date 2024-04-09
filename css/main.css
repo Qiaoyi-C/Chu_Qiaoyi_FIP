@@ -90,7 +90,7 @@ body {
 
             .intro-name {
                color: white;
-               font-size: 74px;
+               font-size: 64px;
                font-weight: bold;
                margin-top: 20px;
                margin-bottom: 8px;
@@ -98,7 +98,7 @@ body {
 
             .intro-info {
                color: white;
-               font-size: 48px;
+               font-size: 40px;
                font-weight: bold;
                margin-bottom: 16px;
             }
@@ -242,12 +242,20 @@ body {
    align-items: center;
 }
 
-#header-zima #sidebar-menu {
-   order: 2; /* 将菜单移动到右边 */
+   #header-zima #sidebar-menu {
+   order: 2; 
 }
     #zima-main{
 
       height: 400px;
+   }
+
+   .intro-name {
+      font-size: 74px;
+   }
+
+   .intro-info {
+      font-size: 48px;
    }
 
    #titleproduct, #titlebranding, #find{
