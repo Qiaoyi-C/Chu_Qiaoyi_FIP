@@ -21,7 +21,48 @@ body {
    border-radius: 50px;
    font-weight: bold;
    cursor: pointer;
+   margin: 16px;
  }
+
+ #product-image-container {
+   position: relative;
+}
+
+.popover {
+   position: absolute;
+   background-color:  #FFF5E8; /* Background color */
+   border: 1px solid #ccc; /* Border */
+   border-radius: 20px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+   padding: 40px; /* Padding */
+   max-width: 400px; /* Max width */
+   z-index: 999; /* Ensure popover appears above other content */
+ }
+ 
+ .popover-content h3 {
+   color: #FF9E29; 
+   font-size: 24px; 
+   margin-bottom: 16px; 
+ }
+ 
+ .popover-content p {
+   color: #000000; 
+   font-size: 18px; 
+   margin-bottom: 16px; 
+   line-height: 32px;
+ }
+ 
+ .popover::after {
+   content: "";
+   position: absolute;
+   top: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-width: 10px;
+   border-style: solid;
+   border-color: transparent transparent #fff transparent;
+ }
+
  
  @media screen and (min-resolution: 200dpi),
          screen and (min-resolution: 1.25dppx) {
@@ -34,10 +75,6 @@ body {
             #menu img{
                width:40px;
                
-            }
-
-            #logo{
-               justify-self: center;
             }
                
             #logo img {
@@ -65,7 +102,7 @@ body {
                
            }
 
-             #sidebar-menu li a{
+            #sidebar-menu li a{
                 text-decoration: none;
                 color: #FF9E29;
                 font-weight: bold;
@@ -74,10 +111,15 @@ body {
 
                }
 
-               #sidebar-menu li a:hover{
+            #sidebar-menu li a:hover{
                   background-color: #FF9E29;
                   color: white;
+                  border-radius: 30px;
                }
+
+            #topbar-menu {
+               display: none;
+            }   
 
             #zima-main{
                background:url(../images/Main.jpg) no-repeat;
@@ -214,7 +256,10 @@ body {
             }
 
             .footer-logo{
-               width: 25%;
+               width: 20%;
+               display: inline-block;
+               justify-items: flex-start;
+               margin-right: 5%;
             }
 
             .footer-contact{
@@ -222,7 +267,16 @@ body {
                font-size: 14px;
                color: white;
                line-height: 20px;
+               display: inline-block;
 
+            }
+
+            .footer-social-media{
+               display: none;
+            }
+
+            #footer-menu{
+               display: none;
             }
 
             /* Product Page */
@@ -260,7 +314,7 @@ body {
 
             .flavorbt {
                text-align: center;
-               margin-top: 32px;
+               margin-top: 16px;
                margin-bottom: 48px;
             }
 
@@ -269,11 +323,68 @@ body {
                padding-top: 48px;
 
             }
+
+            /* Contact Page */
+            #contact {
+               background: linear-gradient(to bottom, #FFF5E8 30%, white 50%);
+               padding-bottom: 80px;
+               max-width: 100%;
             
-
-     
-
+           }
            
+           .contact-form {
+               background-color: white;
+               border-radius: 25px;
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+               padding: 20px;
+               margin-bottom: 100px;
+               
+           }
+           
+           
+           .form-group {
+               margin-bottom: 20px;
+           }
+           
+           .form-group label {
+               display: block;
+               font-weight: bold;
+               margin-bottom: 10px;
+           }
+           
+           .form-group input[type="text"],
+           .form-group input[type="email"],
+           .form-group textarea {
+               width: 100%;
+               padding: 10px;
+               border: 1px solid #ffffff;
+               background-color:#F5F4F4 ;
+               border-radius: 20px;
+           }
+           
+           .form-group textarea {
+               height: 250px;
+           }
+           
+           button[type="submit"] {
+               background-color: #FF9E29;
+               color: white;
+               border: none;
+               padding: 10px 64px;
+               border-radius: 50px;
+               cursor: pointer;
+               display: block;
+               margin-left: auto;
+               margin-right: auto;
+               transition: background-color 0.3s;
+           }
+
+           button[type="submit"]:hover {
+            background-color: #FFD466; 
+        }
+
+         
+                    
  
  }
  
@@ -282,10 +393,43 @@ body {
     .box{
        font-size: 18px;
     }
-
     #menu {
       display: none;
   }
+
+  #topbar-menu {
+   display: flex;
+   padding: 16px;
+  }
+
+  #topbar-menu ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: flex-end;
+ }
+
+  #topbar-menu li{
+   list-style: none;
+   
+}
+
+#topbar-menu li a{
+   font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 16px 32px 16px 32px;
+  
+   }
+
+#topbar-menu li a:hover{
+      background-color: white;
+      color: #FF9E29;
+      border-radius: 30px;
+   }
+
 
   #header-zima {
    display: flex;
@@ -294,10 +438,6 @@ body {
 }
 
 
-#header-zima #sidebar-menu {
-
-   order: 2; 
-}
     #zima-main{
 
       height: 400px;
@@ -346,6 +486,10 @@ body {
     #footer{
        padding: 90px;
     }
+
+    .footer-logo{
+      margin-right: 35%;
+   }
 
     /* Product Page */
 
@@ -424,11 +568,68 @@ body {
   #where{
    margin-bottom: 24px;
   }
- 
- #footer-zima{
-   max-width: 100%;
- }
 
+
+  /* Footer */
+ 
+  #footer-zima {
+   max-width: 100%;
+   text-align: center; /* 水平居中所有子项 */
+}
+.footer-logo{
+   width: 10%;
+}
+
+.footer-logo,
+.footer-social-media,
+#footer-menu,
+.footer-contact {
+   display: inline-block; /* 将所有子项排列在同一行上 */
+   margin: 10px; /* 添加一些间距 */
+}
+
+.footer-social-media{
+   border-left: solid 1px white;
+   padding-left: 32px;
+}
+
+.footer-social-media a {
+   display: inline-block;
+   margin-right: 10px;
+}
+
+.footer-social-media a:hover img {
+   filter: brightness(0.8);
+}
+
+#footer-menu{
+   margin-left: 80px;
+   margin-right: 80px;
+}
+
+#footer-menu ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+#footer-menu ul li {
+   display: inline-block;
+   margin: 0 10px;
+}
+
+#footer-menu ul li a {
+   text-decoration: none;
+   color: #ffffff;
+   font-weight: bold;
+   padding: 16px 24px;
+   border-radius: 30px;
+}
+
+#footer-menu ul li a:hover {
+   background-color: #FFF5E8;
+   color: #FF9E29;
+}
 
  /* Product Page */
  #product-main{
