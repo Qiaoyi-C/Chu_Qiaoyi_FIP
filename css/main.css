@@ -37,6 +37,7 @@ body {
    padding: 40px; /* Padding */
    max-width: 400px; /* Max width */
    z-index: 999; /* Ensure popover appears above other content */
+
  }
  
  .popover-content h3 {
@@ -62,6 +63,58 @@ body {
    border-style: solid;
    border-color: transparent transparent #fff transparent;
  }
+
+
+ .lightbox{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0, 0.85);
+   background-size: 55vh;
+   background-position: 50px top;
+   display: none;
+
+}
+
+.lightbox_close{
+   position: absolute;
+   top: 20px;
+   right: 5%;
+
+   color: #fff;
+   font-size: 36px;
+
+   text-decoration: none;
+   font-weight: bolder;
+
+   transition: all .5s ease-in-out;
+}
+
+.lightbox_close:hover{
+   opacity: 0.5;
+   color: red;
+}
+
+.lightbox article{
+   width: 55%;
+   margin-left: 40%;
+   padding-top: 50px;
+}
+
+.lb_text, .lb_heading{
+   text-align: left;
+}
+
+.lb_text{
+   line-height: 26px;
+}
+
+/* .*/
+.lightbox:target{
+   display: block;
+}
 
  
  @media screen and (min-resolution: 200dpi),

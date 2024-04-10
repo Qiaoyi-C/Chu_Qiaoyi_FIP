@@ -1,5 +1,15 @@
 function toggleMenu() {
     var sidebarMenu = document.getElementById('sidebar-menu');
+
+    sidebarMenu.classList.toggle('active'); // 切換選單的顯示狀態
+}
+
+    sidebarMenu.classList.toggle('active'); 
+}
+
+// Function to create and show a popover with the promo details
+function showPromoPopover(event, promo) {
+
     sidebarMenu.classList.toggle('active'); 
 }
 
@@ -18,14 +28,9 @@ function showPromoPopover(event) {
     const randomIndex = Math.floor(Math.random() * promos.length);
     const selectedPromo = promos[randomIndex];
 
-    // Create the popover element
-    const popover = document.createElement("div");
-    popover.classList.add("popover");
-    popover.innerHTML = `
-        <div class="popover-content">
-            <h3>${selectedPromo.title}</h3>
-            <p>${selectedPromo.details}</p>
-        </div>
+
+            <h3>${promo.title}</h3>
+            <p>${promo.details}</p>
     `;
 
     // Position the popover relative to the button
@@ -44,6 +49,39 @@ function showPromoPopover(event) {
         }
     });
 }
+
+
+// Function to show Promo 1 details
+function showPromoPopover1(event) {
+    const promo = {
+        title: "Promo 1",
+        details: "This is the first promo details."
+    };
+    showPromoPopover(event, promo);
+}
+
+// Function to show Promo 2 details
+function showPromoPopover2(event) {
+    const promo = {
+        title: "Promo 2",
+        details: "This is the second promo details."
+    };
+    showPromoPopover(event, promo);
+}
+
+// Function to show Promo 3 details
+function showPromoPopover3(event) {
+    const promo = {
+        title: "Promo 3",
+        details: "This is the third promo details."
+    };
+    showPromoPopover(event, promo);
+}
+
+// Event listeners for specific promo buttons
+document.getElementById("promoButton1").addEventListener("click", showPromoPopover1);
+document.getElementById("promoButton2").addEventListener("click", showPromoPopover2);
+document.getElementById("promoButton3").addEventListener("click", showPromoPopover3);
 
 // Event listeners for all buttons with class "promoButton"
 const promoButtons = document.querySelectorAll(".promoButton");
