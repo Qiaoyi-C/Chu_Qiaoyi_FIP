@@ -75,32 +75,43 @@ body {
    background-size: 55vh;
    background-position: 50px top;
    display: none;
+   background-image: url(../images/label-Or.png);
+   background-repeat: no-repeat;
+}
 
+#lightbox2 {
+   background-image: url(../images/label-peach.png);
+}
+
+#lightbox3 {
+   background-image: url(../images/label-blueberry.png);
+}
+
+a {
+   text-decoration: none;
 }
 
 .lightbox_close{
    position: absolute;
    top: 20px;
    right: 5%;
-
    color: #fff;
    font-size: 36px;
-
    text-decoration: none;
    font-weight: bolder;
-
    transition: all .5s ease-in-out;
 }
 
 .lightbox_close:hover{
    opacity: 0.5;
-   color: red;
+   color: #FF9E29;
 }
 
 .lightbox article{
    width: 55%;
    margin-left: 40%;
    padding-top: 50px;
+   color: white;
 }
 
 .lb_text, .lb_heading{
@@ -108,13 +119,29 @@ body {
 }
 
 .lb_text{
-   line-height: 26px;
+   line-height: 32px;
 }
 
-/* .*/
 .lightbox:target{
    display: block;
 }
+
+article{
+   padding: 20px;
+}
+
+article h3 {
+   font-size: 32px;
+   text-align: center;
+   margin-top: 16px;
+   margin-bottom: 16px;
+}
+
+article p{
+   font-size: 18px;
+   text-align: center;
+}
+
 
  
  @media screen and (min-resolution: 200dpi),
