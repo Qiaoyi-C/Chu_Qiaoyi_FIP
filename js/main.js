@@ -1,22 +1,36 @@
 function toggleMenu() {
     var sidebarMenu = document.getElementById('sidebar-menu');
-<<<<<<< Updated upstream
+
     sidebarMenu.classList.toggle('active'); // 切換選單的顯示狀態
 }
-=======
+
     sidebarMenu.classList.toggle('active'); 
 }
 
 // Function to create and show a popover with the promo details
 function showPromoPopover(event, promo) {
-    // Create the popover element
-    const popover = document.createElement("div");
-    popover.classList.add("popover");
-    popover.innerHTML = `
-        <div class="popover-content">
+
+    sidebarMenu.classList.toggle('active'); 
+}
+
+
+const promos = [
+    {
+      title: "Special Promo!",
+      details: "Buy one ZIMA bottle and get another one free! You can choose any flavor. Limited time offer.",
+    },
+    // You can add more promo objects here
+];
+
+// Function to create and show a popover with the promo details
+function showPromoPopover(event) {
+    // Select a random promo (for demonstration purposes)
+    const randomIndex = Math.floor(Math.random() * promos.length);
+    const selectedPromo = promos[randomIndex];
+
+
             <h3>${promo.title}</h3>
             <p>${promo.details}</p>
-        </div>
     `;
 
     // Position the popover relative to the button
@@ -35,6 +49,7 @@ function showPromoPopover(event, promo) {
         }
     });
 }
+
 
 // Function to show Promo 1 details
 function showPromoPopover1(event) {
@@ -67,4 +82,16 @@ function showPromoPopover3(event) {
 document.getElementById("promoButton1").addEventListener("click", showPromoPopover1);
 document.getElementById("promoButton2").addEventListener("click", showPromoPopover2);
 document.getElementById("promoButton3").addEventListener("click", showPromoPopover3);
->>>>>>> Stashed changes
+
+// Event listeners for all buttons with class "promoButton"
+const promoButtons = document.querySelectorAll(".promoButton");
+promoButtons.forEach(button => {
+    button.addEventListener("click", showPromoPopover);
+});
+
+
+
+
+
+
+

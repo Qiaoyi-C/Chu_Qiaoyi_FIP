@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>ZIMA Contact</title>
+</head>
+<body>
+    <header id="header-zima" class="grid-con">
+        <div id="menu" class="box col-start-1 col-end-2 m-col-span-full l-col-start-1 l-col-end-2" onclick="toggleMenu()">
+            <img src="images/menu.svg" alt="hamburger menu icon">
+        </div>
+        <div id="logo" class="box col-start-2 col-end-5 m-col-span-full l-col-start-2 l-col-end-5">
+            <img src="images/logo-white.png" alt="ZIMA logo">
+        </div>
+        <nav id="sidebar-menu" class="grid-con m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="topbar-menu" >
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+
+      <section id="product-main" class="grid-con">
+        <div class="box col-span-full m-col-span-full l-col-span-full ">
+            <h2>CONTACT US</h2>
+        </div>
+      </section>
+    
+      <section id="contact" class="grid-con ">
+        <div class="contact-form col-span-full m-col-span-ful l-col-span-full">
+            <h2 class="hidden">Contact Form</h2>
+            <form action="#" method="post" class="grid-con">
+                <div class="form-group col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                    <label for="name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+                    <label for="name">Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group col-span-full m-col-span-full l-col-span-full">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button class="col-span-full m-col-span-full l-col-span-full" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+       
+    <footer id="footer-zima" class="grid-con">
+        <section id="footer-contact-info" class="box col-span-full l-col-span-full">
+            <div class="footer-logo  l-col-start-2 l-col-end-3">
+                <img src="images/logo-white.png" alt="zima logo">
+            </div>
+
+            <div class="footer-social-media l-col-start-4 l-col-end-6">
+                <a href="#"><img src="images/facebook.svg" alt="facebook icon"></a>
+                <a href="#"><img src="images/instagram.svg" alt="instagram icon"></a>
+                <a href="#"><img src="images/twitter.svg" alt="twitter icon"></a>
+            </div>
+
+            <nav id="footer-menu" class="box col-span-full l-col-span-full">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="footer-contact col-start-2 col-end-5">
+                <p>
+                    Phone: +1 226 523987<br>
+                    E-mail: service@zima.com<br>
+                    Address: 1460 Oxford , London, ON
+                </p>
+            </div>
+        </section>
+    </footer>
+    
+    
+    
+
+        <script src="js/main.js"></script>   
+</body>
+</html>
