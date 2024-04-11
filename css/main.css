@@ -17,11 +17,12 @@ body {
    color: white;
    font-size: 16px;
    border: none;
-   padding: 10px 25px;
+   padding: 16px 30px;
    border-radius: 50px;
    font-weight: bold;
    cursor: pointer;
-   margin: 16px;
+   margin-top: 16px;
+   width: 100%;
  }
 
  .button-link {
@@ -105,7 +106,6 @@ a {
    padding-left: 16px;
    padding-right: 16px;
    
-   
 }
 
 #product1text a,#product2text a,#product3text a {
@@ -157,7 +157,9 @@ article p{
    text-align: center;
 }
 
-
+.lightbox-storyimg img{
+   border-radius: 20px;
+}
  
  @media screen and (min-resolution: 200dpi),
          screen and (min-resolution: 1.25dppx) {
@@ -344,6 +346,14 @@ article p{
                text-align: center;
                margin-top: 48px;
                margin-bottom: 88px;
+            }
+
+            #lightbox-story h3{
+               text-align: center;
+            }
+
+            #lightbox-story p{
+               text-align: center;
             }
 
             #footer-zima{
@@ -588,8 +598,6 @@ article p{
       height: 90%;
    }
  
-
-
    .storybt , .findbt{
       display: flex;
       justify-content: left;
@@ -611,7 +619,13 @@ article p{
 
   }
 
+  .lightbox-storyimg{
+   margin: 32px;
+   width: 50%;
   
+  }
+
+
     
     #footer{
        padding: 90px;
@@ -651,6 +665,15 @@ article p{
    .lightbox-show{
       display: flex;
    }
+
+   .lightbox-show2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center; 
+  }
+  
+
   
  
  }
@@ -743,7 +766,19 @@ article p{
 .lightbox-show{
    display: flex;
 }
-   
+
+#lightbox-story h3{
+   text-align: left;
+}
+
+#lightbox-story p{
+   text-align: left;
+}
+
+.lightbox-show2{
+   display: flex;
+   flex-direction: row;
+}
 
   /* Footer */
  
