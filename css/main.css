@@ -30,13 +30,13 @@ body {
 
 .popover {
    position: absolute;
-   background-color:  #FFF5E8; /* Background color */
-   border: 1px solid #ccc; /* Border */
+   background-color:  #FFF5E8; 
+   border: 1px solid #ccc; 
    border-radius: 20px;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
-   padding: 40px; /* Padding */
-   max-width: 400px; /* Max width */
-   z-index: 999; /* Ensure popover appears above other content */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+   padding: 40px; 
+   max-width: 400px; 
+   z-index: 999; 
 
  }
  
@@ -75,20 +75,15 @@ body {
    background-size: 55vh;
    background-position: 50px top;
    display: none;
-   background-image: url(../images/label-Or.png);
    background-repeat: no-repeat;
-}
-
-#lightbox2 {
-   background-image: url(../images/label-peach.png);
-}
-
-#lightbox3 {
-   background-image: url(../images/label-blueberry.png);
 }
 
 a {
    text-decoration: none;
+}
+
+#product1text a,#product2text a,#product3text a {
+ text-align: right;
 }
 
 .lightbox_close{
@@ -107,14 +102,8 @@ a {
    color: #FF9E29;
 }
 
-.lightbox article{
-   width: 55%;
-   margin-left: 40%;
-   padding-top: 50px;
-   color: white;
-}
 
-.lb_text, .lb_heading{
+.lb_text{
    text-align: left;
 }
 
@@ -404,6 +393,40 @@ article p{
 
             }
 
+            .lightbox{
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100vw;
+               height: 100vh;
+               background-color: rgba(0,0,0, 0.85);
+               background-size: 80vh;
+               background-position: 80px top;
+               display: none;
+            }
+
+            .lightbox-img{
+               text-align: center;
+            }
+
+            .lightbox-img img{
+             text-align: center;
+             width: 40%;
+            }
+
+            .lightbox article{
+               
+               text-align: center;
+               padding-top: 50px;
+               margin: 20px;
+               color: white;
+            }
+
+            .lb_heading{
+               text-align: center;
+            }
+                      
+
             /* Contact Page */
             #contact {
                background: linear-gradient(to bottom, #FFF5E8 30%, white 50%);
@@ -420,8 +443,7 @@ article p{
                margin-bottom: 100px;
                
            }
-           
-           
+                     
            .form-group {
                margin-bottom: 20px;
            }
@@ -562,6 +584,8 @@ article p{
       font-size: 16px;
 
   }
+
+  
     
     #footer{
        padding: 90px;
@@ -589,6 +613,17 @@ article p{
 
     .flavor-info{
       order: 1;
+   }
+   .lb_heading{
+      text-align: left;
+   }
+
+   .lightbox-img img{
+      width: 56%;
+   }
+   
+   .lightbox-show{
+      display: flex;
    }
   
  
@@ -649,6 +684,40 @@ article p{
    margin-bottom: 24px;
   }
 
+  .lightbox{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0, 0.85);
+   background-size: 80vh;
+   background-position: 80px top;
+   display: none;
+}
+
+#lightbox-story article{
+   
+   text-align: center;
+   padding-top: 50px;
+   margin: 20px;
+   color: white;
+}
+
+
+.lb_heading{
+   text-align: left;
+}
+
+.lightbox-img{
+   width: 50%;
+   height: 30%;
+}
+
+.lightbox-show{
+   display: flex;
+}
+   
 
   /* Footer */
  
