@@ -846,7 +846,12 @@ article p{
    max-width: 100%;
  }
 
+/* Contact Page */ 
 
+.contact-form {
+   max-width: 1200px;
+   
+}
 
  
  }
