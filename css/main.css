@@ -24,6 +24,27 @@ body {
    margin: 16px;
  }
 
+ .button-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #FF9E29;
+   color: white;
+   font-size: 16px;
+   border: none;
+   padding: 10px 30px;
+   border-radius: 50px;
+   font-weight: bold;
+   cursor: pointer;
+   
+}
+
+.button-link:hover {
+   background-color: #FFD466; 
+   color: #FFFFFF; 
+}
+
+
  #product-image-container {
    position: relative;
 }
@@ -80,6 +101,11 @@ body {
 
 a {
    text-decoration: none;
+   color: #fff;
+   padding-left: 16px;
+   padding-right: 16px;
+   
+   
 }
 
 #product1text a,#product2text a,#product3text a {
